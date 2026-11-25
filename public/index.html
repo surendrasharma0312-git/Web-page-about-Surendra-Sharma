@@ -1,98 +1,73 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#0b1020" />
-  <meta name="description" content="The personal portfolio of Surendra Sharma — a student exploring technology, AI, web development and cybersecurity." />
-  <meta property="og:title" content="Surendra Sharma — Personal Portfolio" />
-  <meta property="og:description" content="Learning, building and growing with technology." />
-  <title>Surendra Sharma | Personal Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d18">
+  <meta name="description" content="Surendra Web Studio — personal portfolio of Surendra Sharma. Explore digital projects, web experiences and ways to connect.">
+  <meta property="og:title" content="Surendra Web Studio — Surendra Sharma">
+  <meta property="og:description" content="Ideas into Digital Experiences.">
+  <meta property="og:type" content="website">
+  <title>Surendra Web Studio — Surendra Sharma</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <script>try{const t=localStorage.getItem('ss-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.dataset.theme=localStorage.getItem('sws-theme')||'dark';</script>
 </head>
 <body>
   <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
   <header class="site-header">
-    <a class="brand" href="#home" aria-label="Surendra Sharma home"><span class="brand-mark">S</span><span>Surendra<span class="brand-dot">.</span></span></a>
+    <a class="brand" href="#home" aria-label="Surendra Web Studio home"><span class="brand-mark">S<span>.</span></span><span class="brand-name">SURENDRA<span>WEB STUDIO</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
     <nav class="nav" id="nav">
-      <a href="#about">About</a><a href="#journey">Journey</a><a href="#projects">Projects</a><a href="#interests">Interests</a><a href="#contact">Contact</a>
+      <a href="#home" class="nav-link active">Home</a><a href="#about" class="nav-link">About</a><a href="#services" class="nav-link">Services</a><a href="#projects" class="nav-link">Projects</a><a href="#contact" class="nav-link">Contact</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch color theme"><span id="themeIcon">☼</span></button>
     </nav>
-    <div class="header-actions">
-      <button class="theme-toggle" id="themeToggle" aria-label="Switch color theme" title="Switch theme"><span id="themeIcon">☼</span></button>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span></button>
-    </div>
   </header>
-
   <main>
-    <section class="hero section-wrap" id="home">
+    <section class="hero section" id="home">
       <div class="hero-copy">
-        <div class="eyebrow"><span class="status-dot"></span> STUDENT · TECH ENTHUSIAST</div>
-        <p class="hero-kicker">Hello, I'm</p>
+        <div class="eyebrow"><span class="status-dot"></span> PERSONAL PORTFOLIO & DIGITAL STUDIO</div>
+        <p class="hello">Hello, I'm</p>
         <h1>Surendra<br><span class="gradient-text">Sharma.</span></h1>
-        <p class="hero-lead">Curious mind. Continuous learner. Future-focused builder.</p>
-        <p class="hero-description">I'm exploring the world of technology, artificial intelligence and web development — turning curiosity into practical projects, one step at a time.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my work <span>↗</span></a><a class="text-link" href="#about">Get to know me <span>↓</span></a></div>
-        <div class="hero-meta"><span>BASED IN</span><strong>Bihar, India</strong><span class="meta-divider"></span><span>FOCUSED ON</span><strong>Learning & building</strong></div>
+        <p class="hero-lead">I turn curious ideas into <span>useful digital experiences.</span></p>
+        <p class="hero-note">A student, technology enthusiast and aspiring creator exploring web development, AI and the future of technology.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#projects">Explore my work <span>↗</span></a><a class="btn btn-quiet" href="#contact">Let's connect <span>→</span></a></div>
+        <div class="hero-meta"><span>BASED IN INDIA</span><i></i><span>ALWAYS LEARNING</span></div>
       </div>
-      <div class="hero-visual" aria-label="Abstract decorative technology artwork">
+      <div class="hero-art" aria-label="Abstract digital design illustration">
         <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit orbit-c"></div>
-        <div class="visual-core"><span class="core-symbol">S<span>.</span></span><span class="core-caption">THINK · LEARN · BUILD</span></div>
-        <span class="float-chip chip-ai">✳ &nbsp; Artificial Intelligence</span><span class="float-chip chip-code">⌘ &nbsp; Web Development</span><span class="float-chip chip-curious">↗ &nbsp; Always exploring</span>
-        <div class="visual-grid"></div>
+        <div class="art-core"><span class="core-s">S</span><span class="core-caption">IDEAS<br>IN MOTION</span></div>
+        <span class="float-chip chip-top">✳ Creative thinking</span><span class="float-chip chip-bottom">⌘ Digital builder</span>
+        <span class="art-star star-one">✦</span><span class="art-star star-two">✧</span>
       </div>
       <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
     </section>
-
-    <section class="section-wrap section-block" id="about">
-      <div class="section-label">01 / ABOUT ME</div>
-      <div class="section-heading"><h2>A little about<br><span class="muted-heading">who I am.</span></h2><p class="section-intro">I believe progress comes from staying curious, learning consistently and having the courage to build something new.</p></div>
-      <div class="about-grid">
-        <article class="about-card about-main"><div class="card-icon">✳</div><h3>Learning by doing.</h3><p>I'm a student with a growing interest in computer science and modern technology. I enjoy discovering how digital products work and experimenting with ideas that can solve everyday problems.</p><p>My journey is still at the beginning, and that's what makes it exciting. Every project is a chance to learn something useful and improve my skills.</p></article>
-        <article class="about-card about-note"><span class="note-mark">“</span><p>Stay curious.<br>Keep building.<br><span class="gradient-text">Never stop learning.</span></p><span class="note-caption">A mindset I try to live by.</span></article>
+    <section class="section about-section" id="about">
+      <div class="section-kicker">01 / ABOUT</div><div class="section-heading"><h2>Curious by nature.<br><span class="muted">Driven to create.</span></h2><p class="section-intro">I believe technology becomes powerful when it solves real problems and makes everyday experiences better.</p></div>
+      <div class="about-grid"><div class="about-card glass"><div class="card-icon">◎</div><h3>A little about me</h3><p>I'm Surendra Sharma, a student from Bihar with a growing interest in computer science, artificial intelligence and digital product creation. I enjoy learning by building, experimenting and improving ideas step by step.</p></div><div class="about-card glass"><div class="card-icon">⌁</div><h3>My approach</h3><p>Stay curious, keep things practical and focus on the details that matter. Every project is an opportunity to learn something new and create something useful.</p></div></div>
+    </section>
+    <section class="section" id="services">
+      <div class="section-kicker">02 / WHAT I EXPLORE</div><div class="section-heading"><h2>Turning ideas<br><span class="muted">into experiences.</span></h2><p class="section-intro">Areas I'm learning, building in and exploring as I grow my skills.</p></div>
+      <div class="service-grid">
+        <article class="service-card"><span class="service-number">01</span><div class="service-icon">⌘</div><h3>Web Development</h3><p>Responsive websites and clean interfaces designed to work beautifully across devices.</p><span class="service-line"></span></article>
+        <article class="service-card"><span class="service-number">02</span><div class="service-icon">✳</div><h3>AI & Technology</h3><p>Exploring AI tools, automation and emerging technologies through hands-on experiments.</p><span class="service-line"></span></article>
+        <article class="service-card"><span class="service-number">03</span><div class="service-icon">◇</div><h3>Digital Projects</h3><p>Turning practical ideas into useful digital products, prototypes and experiences.</p><span class="service-line"></span></article>
       </div>
     </section>
-
-    <section class="section-wrap section-block" id="journey">
-      <div class="section-label">02 / MY JOURNEY</div>
-      <div class="section-heading"><h2>Every step is<br><span class="muted-heading">part of the process.</span></h2><p class="section-intro">A snapshot of my learning path so far. I'm focused on building strong foundations and exploring where technology can take me.</p></div>
-      <div class="timeline">
-        <div class="timeline-item"><span class="timeline-pin"></span><div class="timeline-date">EDUCATION</div><div><h3>Senior Secondary · PCM</h3><p>Completed Class 12 under the Bihar School Examination Board (BSEB), with Physics, Chemistry and Mathematics.</p></div></div>
-        <div class="timeline-item"><span class="timeline-pin"></span><div class="timeline-date">CURRENTLY</div><div><h3>Building my tech foundation</h3><p>Exploring computer skills, web technologies, AI tools and communication while preparing for the next stage of education.</p></div></div>
-        <div class="timeline-item"><span class="timeline-pin"></span><div class="timeline-date">NEXT CHAPTER</div><div><h3>Deeper learning & better projects</h3><p>My goal is to strengthen my computer science fundamentals and turn more ideas into useful digital experiences.</p></div></div>
-      </div>
-    </section>
-
-    <section class="section-wrap section-block" id="projects">
-      <div class="section-label">03 / SELECTED PROJECTS</div>
-      <div class="section-heading"><h2>Ideas becoming<br><span class="muted-heading">real projects.</span></h2><p class="section-intro">A few experiments and practical projects from my learning journey. These are works in progress, and I'm learning with every iteration.</p></div>
+    <section class="section projects-section" id="projects">
+      <div class="section-kicker">03 / SELECTED WORK</div><div class="section-heading"><h2>Things I've<br><span class="muted">been building.</span></h2><p class="section-intro">A few independent projects that reflect my curiosity and hands-on learning.</p></div>
       <div class="project-grid">
-        <article class="project-card project-featured"><div class="project-top"><span class="project-number">01</span><span class="project-type">WEB APP · LEARNING</span></div><div class="project-art art-rebel"><span class="art-word">REBEL<span>.</span></span><span class="art-sub">LEARN · PRACTISE · IMPROVE</span><div class="art-orbit"></div></div><div class="project-info"><h3>Rebel Test</h3><p>A vocabulary and test-series learning project designed to support practice, progress tracking and classroom learning.</p><div class="tag-row"><span>Education</span><span>Web App</span><span>Practice</span></div></div></article>
-        <article class="project-card"><div class="project-top"><span class="project-number">02</span><span class="project-type">CONCEPT · COMMERCE</span></div><div class="project-art art-canteen"><div class="canteen-icon">▦</div><span class="canteen-word">SAINIK<br>CANTEEN</span><span class="canteen-line"></span></div><div class="project-info"><h3>Sainik Canteen</h3><p>A local ordering and delivery app concept focused on a simple customer experience and clear order flow.</p><div class="tag-row"><span>Product Idea</span><span>Delivery</span></div></div></article>
-        <article class="project-card"><div class="project-top"><span class="project-number">03</span><span class="project-type">DIGITAL PROJECT</span></div><div class="project-art art-medi"><span class="medi-cross">+</span><span class="medi-word">MediSetu</span><span class="medi-caption">CONNECTING CARE</span></div><div class="project-info"><h3>MediSetu</h3><p>A digital project exploring how a simple online experience can make information and services easier to access.</p><div class="tag-row"><span>Web Project</span><span>Experiment</span></div></div></article>
+        <article class="project-card project-featured"><div class="project-visual visual-rebel"><span class="visual-label">LEARN • PRACTICE • GROW</span><div class="visual-title">REBEL<br><b>TEST</b></div><span class="visual-orbit"></span></div><div class="project-info"><div><span class="project-type">EDUCATION / WEB APP</span><h3>Rebel Test Series</h3><p>A vocabulary and test-practice platform designed to support students with learning and progress tracking.</p></div><span class="project-arrow">↗</span></div></article>
+        <article class="project-card"><div class="project-visual visual-medisetu"><span class="med-cross">＋</span><span class="med-title">MediSetu</span><span class="med-sub">CARE CONNECTED</span><div class="med-orb"></div></div><div class="project-info"><div><span class="project-type">DIGITAL CONCEPT</span><h3>MediSetu</h3><p>A digital concept exploring simpler connections to healthcare information and services.</p></div><span class="project-arrow">↗</span></div></article>
+        <article class="project-card"><div class="project-visual visual-portfolio"><div class="window-dots"><i></i><i></i><i></i></div><div class="window-lines"><b></b><i></i><i></i><i></i></div><span class="window-tag">YOUR NEXT IDEA</span></div><div class="project-info"><div><span class="project-type">WEB / CREATIVE</span><h3>Web Experiences</h3><p>Small website experiments focused on responsive layouts, clear content and modern design.</p></div><span class="project-arrow">↗</span></div></article>
       </div>
-      <p class="project-disclaimer">Project descriptions are brief overviews of personal learning projects; features and development status may evolve.</p>
+      <p class="project-disclaimer">These are learning and independent projects. More work will be added as it evolves.</p>
     </section>
-
-    <section class="section-wrap section-block" id="interests">
-      <div class="section-label">04 / WHAT I'M EXPLORING</div>
-      <div class="section-heading"><h2>Curiosity has<br><span class="muted-heading">no boundaries.</span></h2><p class="section-intro">Areas that motivate me to learn, experiment and keep improving.</p></div>
-      <div class="interest-grid">
-        <div class="interest-card"><span class="interest-icon">✳</span><h3>Artificial Intelligence</h3><p>Understanding AI tools and how intelligent systems can help people.</p><span class="interest-index">01</span></div>
-        <div class="interest-card"><span class="interest-icon">⌘</span><h3>Web Development</h3><p>Learning how websites and digital experiences are designed and built.</p><span class="interest-index">02</span></div>
-        <div class="interest-card"><span class="interest-icon">⌁</span><h3>Cybersecurity</h3><p>Exploring digital safety, security fundamentals and responsible technology.</p><span class="interest-index">03</span></div>
-        <div class="interest-card"><span class="interest-icon">↗</span><h3>Problem Solving</h3><p>Breaking ideas into steps and finding practical ways to make them work.</p><span class="interest-index">04</span></div>
-      </div>
-    </section>
-
-    <section class="section-wrap contact-section" id="contact">
-      <div class="section-label">05 / GET IN TOUCH</div><div class="contact-panel"><div><p class="contact-kicker">HAVE AN IDEA OR WANT TO CONNECT?</p><h2>Let's make<br><span class="gradient-text">something meaningful.</span></h2><p class="contact-copy">I'm always open to learning, exchanging ideas and connecting with people who enjoy building useful things.</p><a class="button button-primary" href="https://github.com/surendrasharma0312-git" target="_blank" rel="noopener noreferrer">Find me on GitHub <span>↗</span></a></div><div class="contact-decoration"><div class="contact-ring"></div><span>LET'S<br>CONNECT<span class="gradient-text">.</span></span></div></div>
-    </section>
+    <section class="contact-section section" id="contact"><div class="contact-panel"><div class="section-kicker">04 / GET IN TOUCH</div><h2>Have an idea?<br><span class="gradient-text">Let's talk.</span></h2><p>I'm always open to connecting with curious people, exchanging ideas and exploring meaningful projects.</p><a class="btn btn-primary" href="mailto:ksurendra3098@gmail.com">Send me an email <span>↗</span></a><div class="contact-email">ksurendra3098@gmail.com</div><div class="contact-decoration">S<span>.</span></div></div></section>
   </main>
-  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">S</span><span>Surendra<span class="brand-dot">.</span></span></a><p>Designed with curiosity. Built to keep growing.</p><span>© <span id="year"></span> Surendra Sharma</span></footer>
+  <footer class="footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">S<span>.</span></span><span class="brand-name">SURENDRA<span>WEB STUDIO</span></span></a><p>Ideas into Digital Experiences.</p><span>© <span id="year"></span> Surendra Sharma. Built with curiosity.</span></footer>
   <script src="script.js"></script>
 </body>
 </html>
